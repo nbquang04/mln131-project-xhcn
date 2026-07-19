@@ -4,8 +4,22 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Hành trình xây dựng chủ nghĩa xã hội ở Việt Nam - Timeline tương tác MLN131" />
-    <title>Hành trình CNXH Việt Nam | MLN131</title>
+    <meta name="description" content="Hành trình xây dựng chủ nghĩa xã hội ở Việt Nam - Timeline tương tác UpToXHCN" />
+    <title>Hành trình CNXH Việt Nam | UpToXHCN</title>
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('upto-xhcn-theme')
+          var theme =
+            stored === 'light' || stored === 'dark'
+              ? stored
+              : window.matchMedia('(prefers-color-scheme: dark)').matches
+                ? 'dark'
+                : 'light'
+          if (theme === 'dark') document.documentElement.classList.add('dark')
+        } catch (e) {}
+      })()
+    </script>
   </head>
   <body>
     <div id="root"></div>

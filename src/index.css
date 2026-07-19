@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@import "@fontsource-variable/outfit";
+
+@theme {
+  --font-sans: "Outfit Variable", system-ui, sans-serif;
+  --color-accent: #c41e2a;
+  --color-accent-dark: #9a1820;
+  --color-surface: #fafaf9;
+  --color-surface-dark: #0c0a09;
+  --color-muted: #78716c;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

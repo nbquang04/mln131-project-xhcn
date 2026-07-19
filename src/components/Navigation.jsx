@@ -1,10 +1,8 @@
 import { Link } from 'react-router-dom'
 import { Moon, Sun } from '@phosphor-icons/react'
-import { useProgress } from '../context/ProgressContext'
 import { useTheme } from '../context/ThemeContext'
 
 export function Navigation() {
-  const { score } = useProgress()
   const { theme, toggleTheme } = useTheme()
   const isDark = theme === 'dark'
 
@@ -27,9 +25,6 @@ export function Navigation() {
           >
             Quiz
           </Link>
-          <span className="font-medium text-stone-700 dark:text-stone-300">
-            {score} điểm
-          </span>
           <button
             type="button"
             onClick={toggleTheme}
